@@ -5,7 +5,7 @@ from random import choices
 from .extensions import db
 
 
-# Integer, PRi key, URL, visitCount, date
+# Integer, PRi key, URL, visitCount, date   CMD ["pipenv", "run", "flask", "run"]
 class Link(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     original_url = db.Column(db.String(512))

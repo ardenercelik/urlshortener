@@ -14,4 +14,6 @@ def create_app(config_file="settings.py"):
 
     app.register_blueprint(short)
 
+
+
     return app
