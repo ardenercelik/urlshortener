@@ -1,6 +1,8 @@
-FROM alpine:latest
+FROM python:3-alpine
+MAINTAINER Arden Ercelik 
 
 RUN apk add --no-cache python3-dev && \
+python -m pip install --upgrade pip && \
 pip3 install --upgrade pip && \
 pip3 install pipenv && \
 pip3 install python-dotenv
